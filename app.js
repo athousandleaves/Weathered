@@ -125,3 +125,14 @@ window.addEventListener("load", function() {
         }
     }, function(error){
         // Let user input a city to get API data
+       
+        //display form
+        var body = document.querySelector(".focus");
+        var formDiv = document.createElement("div");
+        body.appendChild(formDiv);
+        var form = document.createElement("form");
+        formDiv.appendChild(form);
+        var input = document.createElement("input");
+        input.className = "input";
+        input.placeholder = "Type city name here...";
+        form.appendChild(input);
