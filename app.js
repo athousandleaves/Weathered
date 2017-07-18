@@ -219,3 +219,10 @@ window.addEventListener("load", function() {
                     cDiv.appendChild(cSection);
                     var C = document.createTextNode(`The temperature in ${location} is ${celsius} degrees celsius`);
                     cSection.appendChild(C);
+
+                    // toggle button to switch between fahrenheit and celsius
+                    cButton.innerText = "Celsius";
+                    fButton.innerText = "Fahrenheit";
+                    body.appendChild(cButton);
+                    cButton.style.display = "inherit";
+                    fButton.style.display = "hidden";
