@@ -194,3 +194,11 @@ window.addEventListener("load", function() {
                     } else if (id >=900 && id <= 906) {
                       weatherClass = "wi wi-small-craft-advisory";
                     }
+
+                    // icon display
+                    var iconDiv = document.createElement("div");
+                    body.appendChild(iconDiv);
+                    var weatherIcon = document.createElement("i");
+                    weatherIcon.className = weatherClass;
+                    weatherIcon.id = "weatherID";
+                    iconDiv.appendChild(weatherIcon);
