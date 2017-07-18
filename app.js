@@ -145,3 +145,13 @@ window.addEventListener("load", function() {
 
         //hide the loading icon
         body.removeChild(iDiv);
+
+        input.addEventListener('keypress', function(e){
+          if (e.which === 13) {
+            e.preventDefault();
+              var city = input.value;
+                var xhr = new XMLHttpRequest();
+                xhr.onload = pull;
+                xhr.onerror = error;
+                xhr.open('get', `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=fcf9b7740425bcdc4fd4d0c171008a09`);
+                xhr.send();
