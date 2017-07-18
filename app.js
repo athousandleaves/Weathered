@@ -105,3 +105,17 @@ window.addEventListener("load", function() {
         fButton.innerText = "Fahrenheit";
         fButton.style.display = "none";
         body.appendChild(fButton);
+        
+        // alternating listeners for temperature buttons
+        cButton.addEventListener("click", function (){
+          fSection.style.display = "none";
+          cSection.style.display = "inherit";
+          cButton.style.display = "none";
+          fButton.style.display = "inherit";
+        });
+        fButton.addEventListener("click", function (){
+              fSection.style.display = "inherit";
+              cSection.style.display = "none";
+              cButton.style.display = "inherit";
+              fButton.style.display = "none";
+            });
