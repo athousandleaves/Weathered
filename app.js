@@ -235,4 +235,12 @@ window.addEventListener("load", function() {
                     cButton.style.display = "none"; 
                     body.appendChild(fButton);
                     fButton.style.display = "inherit";
-                  });
+                    });
+
+                    // fahrenheit button
+                    fButton.addEventListener("click", function (){
+                    fSection.style.display = "inherit";
+                    cSection.style.display = "none";
+                    cButton.style.display = "inherit";
+                    fButton.style.display = "none";
+                    });
