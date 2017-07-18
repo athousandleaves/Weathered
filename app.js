@@ -85,3 +85,12 @@ window.addEventListener("load", function() {
         fDiv.appendChild(fSection);
         var F = document.createTextNode(`The temperature in ${location} is ${fahrenheit} degrees fahrenheit`);
         fSection.appendChild(F);
+
+        //celsius display
+        var cDiv = document.createElement("div");
+        body.appendChild(cDiv);
+        var cSection = document.createElement("h1");
+        cSection.style.display = "none";
+        cDiv.appendChild(cSection);
+        var C = document.createTextNode(`The temperature in ${location} is ${celsius} degrees celsius`);
+        cSection.appendChild(C);
