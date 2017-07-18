@@ -202,3 +202,11 @@ window.addEventListener("load", function() {
                     weatherIcon.className = weatherClass;
                     weatherIcon.id = "weatherID";
                     iconDiv.appendChild(weatherIcon);
+
+                    //fahrenheit display
+                    var fDiv = document.createElement("div");
+                    body.appendChild(fDiv);
+                    var fSection = document.createElement("h1");
+                    fDiv.appendChild(fSection);
+                    var F = document.createTextNode(`The temperature in ${location} is ${fahrenheit} degrees fahrenheit`);
+                    fSection.appendChild(F);
