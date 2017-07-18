@@ -226,3 +226,13 @@ window.addEventListener("load", function() {
                     body.appendChild(cButton);
                     cButton.style.display = "inherit";
                     fButton.style.display = "hidden";
+
+                    // celsius button
+                    cButton.addEventListener("click", function (){
+                    fSection.style.display = "none";
+                    fButton.style.display = "none";
+                    cSection.style.display = "inherit";
+                    cButton.style.display = "none"; 
+                    body.appendChild(fButton);
+                    fButton.style.display = "inherit";
+                  });
