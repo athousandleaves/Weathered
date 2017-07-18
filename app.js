@@ -244,3 +244,9 @@ window.addEventListener("load", function() {
                     cButton.style.display = "inherit";
                     fButton.style.display = "none";
                     });
+                }
+          }
+        })
+      })
+  }
+})
