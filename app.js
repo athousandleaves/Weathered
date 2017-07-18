@@ -15,3 +15,10 @@ var i = document.createElement("i");
 i.className = "fa fa-refresh fa-spin fa-3x fa-fw";
 i.id = "loader";
 iDiv.appendChild(i);
+
+window.addEventListener("load", function() {
+  if ("geolocation" in navigator) {
+    // get geolocation from DOM API
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
