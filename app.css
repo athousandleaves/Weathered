@@ -1,0 +1,87 @@
+body {
+  background-color: #CFE8EF;
+  font-family: 'Droid Serif', serif !important;
+}
+
+.focus {
+  margin: 0 auto;
+  padding-top: 12em;
+  max-width: 500px;
+}
+
+@media (max-width: 480px) {
+  .focus {
+    padding-top: 6em;
+    max-width: 75%;
+  }
+}
+
+#loader {
+  font-size: 80px;
+}
+
+.input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Droid Serif', serif !important;
+}
+
+.button {
+    font-family: 'Droid Serif', serif !important;
+    margin: 0 auto;
+    float: right;
+    background-color: #AED1E6;
+    padding: 0.75rem 1rem;
+    border: 1px solid #698EB3;
+    border-radius: 0.317rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 0.8em;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.button:hover {
+	opacity: 0.9;
+}
+
+.button:active {
+	box-shadow: inset 0 2px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.button:focus {
+	outline: thin dotted #444;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  padding-top: 15px;
+}
+
+.i {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10em;
+  text-align: center;
+}
+
+#weatherID {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px !important;
+}
+
+form {
+  padding-bottom: 20px;
+}
