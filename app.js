@@ -29,3 +29,17 @@ window.addEventListener("load", function() {
       xhr.onerror = error;
       xhr.open('get', `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=fcf9b7740425bcdc4fd4d0c171008a09`);
       xhr.send();
+
+      function pull() {
+      var parsed = JSON.parse(this.responseText);
+        display(parsed);
+      }
+      
+      function error(err) {  
+        console.error('Error: ', err);  
+        }
+
+      function display(degrees) {
+       var fahrenheit = Math.round(degrees.main.temp * 9/5 - 459.67);
+       var celsius = Math.round(degrees.main.temp - 273.15);
+       var location = degrees.name;
