@@ -142,3 +142,6 @@ window.addEventListener("load", function() {
         cButton.className = "button";
         var fButton = document.createElement("button");
         fButton.className = "button";
+
+        //hide the loading icon
+        body.removeChild(iDiv);
