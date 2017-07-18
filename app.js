@@ -119,3 +119,6 @@ window.addEventListener("load", function() {
               cButton.style.display = "inherit";
               fButton.style.display = "none";
             });
+
+            // hide the loading icon
+            body.removeChild(iDiv);
