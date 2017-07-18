@@ -122,3 +122,6 @@ window.addEventListener("load", function() {
 
             // hide the loading icon
             body.removeChild(iDiv);
+        }
+    }, function(error){
+        // Let user input a city to get API data
