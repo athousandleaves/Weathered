@@ -136,3 +136,9 @@ window.addEventListener("load", function() {
         input.className = "input";
         input.placeholder = "Type city name here...";
         form.appendChild(input);
+
+        //create buttons to be generated later
+        var cButton = document.createElement("button");
+        cButton.className = "button";
+        var fButton = document.createElement("button");
+        fButton.className = "button";
